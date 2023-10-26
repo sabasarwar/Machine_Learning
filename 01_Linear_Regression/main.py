@@ -14,8 +14,8 @@ plt.ylabel('cells')
 plt.scatter(df.time, df.cells,color='red',marker='*')
 plt.show()
 
-# Y = dependent variable = the value we want to predict
-# X = independent variables upon which Y depends
+# X = independent variables upon which Y depends = time
+# Y = dependent variable = the value we want to predict = no. of cells
 # 3 steps for linear regression....
 # Step 1: Create the instance of the model
 # Step 2: .fit() to train the model or fit a linear model
@@ -23,8 +23,8 @@ plt.show()
 
 # x_df = df.drop('cells', axis='columns')
 # y_df = df.cells
-x_df=df[['time']]
-y_df=df[['cells']]
+x_df = df[['time']]
+y_df = df[['cells']]
 print(x_df)
 print(y_df)
 
